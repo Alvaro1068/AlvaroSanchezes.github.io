@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+    <a href="file:///C:/Users/alvarosancheze.car/Documents/PaginaWeb/Tercera.html#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Comandos basicos</a>
+    <a href="file:///C:/Users/alvarosancheze.car/Documents/PaginaWeb/Secundaria.html#"  class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Creación de un servidor</a>
+    <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Comandos avanzados</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Creación de un bot de soporte</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+<img src="imagenes\discord.png" height="300px">
+  <h1 class="w3-margin w3-jumbo"></h1>
+  <p class="w3-xlarge">Por Alvaro1068XD</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="https://discordapp.com/" target="_blank">Empieza ya!</a></button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="w3-center">Presentación</h1>
+      <h5 class="w3-padding-32">Discord es una aplicación de <a href="https://www.3cx.es/voip-sip/voip-definicion/" target="_blank">VoIP</a> gratuita diseñada para comunidades de videojuegos. Discord se ejecuta en <strong>Windows, MacOS, Android, iOS, Linux </strong>y tiene la posibilidad de ser usado desde el software creado para dicho programa o puede ser usado directamente desde el navegador. Desde julio de 2019, la plataforma cuenta con más de 250 millones de usuarios activos.
+</h5>
+    </div>
+<img src="imagenes\logo.jpg" height="200px">
+    <div class="w3-third w3-center">
+      
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src="imagenes\escudo.png" height="200px">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>En que se Basa?</h1>
+      <h5 class="w3-padding-32">El cliente de Discord se basa en el framework Electron utilizando tecnologías web, lo que le permite ser multiplataforma y ejecutarse en computadoras personales y en la web. 
+	  El software es apoyado por once centros de datos diseminados por todo el mundo para mantener baja la latencia con los clientes. Todas las versiones del cliente admiten el mismo conjunto de características. 
+	  La aplicación Discord para computadoras personales está diseñada específicamente para usarse mientras se juega, ya que incluye características como baja latencia, servidores de chat de voz gratuitos para usuarios y una infraestructura de servidor dedicada.
+	  Los desarrolladores de Discord también agregaron llamadas de video y pantalla compartida en 2017.</h5>
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2WvMPZ--2qo?rel=0&amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;loop" allowfullscreen></iframe>
+    
+</div>
+
+
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

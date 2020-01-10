@@ -1,0 +1,321 @@
+
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme"></h1>
+  <button class="w3-bar-item w3-button" onclick="w3_close()">Cierre <i class="fa fa-remove"></i></button>
+  <a href="file:///C:/Users/alvarosancheze.car/Documents/PaginaWeb/index.html" class="w3-bar-item w3-button">Inicio</a>
+  <a href="#" class="w3-bar-item w3-button"></a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  <h1 class="w3-xxxlarge w3-animate-bottom ">Como crear un servidor</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Tienes dudas?</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h4> Hola, has pulsado el boton de ayuda</h4>
+      </header>
+      <div class="w3-padding">
+        <p>Si tienes algun problema o duda no dudes en contactarme</p>
+        <p>Agregame en Discord y hablame ID:ᎪᏞᏉᎪᏒᎾ#0653
+      </div>
+      <footer class="w3-container w3-theme-l1">
+        <p>Discord web</p>
+      </footer>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Creación</h3><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Buscas El signo positivo y le das</p>
+  <img src="imagenes\captura.png"><br>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3></h3><br>
+  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+   <p>le das a "Crear Servidor"</p>
+  <img src="imagenes\crear.png"><br>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3>Diseño</h3><br>
+  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Pones la region, el nombre del servidor y la foto (opcional)</p>
+  <img src="imagenes\Nombrar.png"><br>
+  <p>Y por ultimo le das a "Crear"</p>
+  </div>
+</div>
+</div>
+
+ 
+     
+<div class="w3-center">
+  <h2>Listo ya has creado el servidor!</h2>
+  <p>Ahora te pondre una configuración basica para poder tener vivo ese servidor</p>
+  pero antes de eso hay que compartirlo</p>
+</div>   
+
+<header class="w3-container w3-blue-grey w3-center">
+  <h2><strong>Configuración</strong></h2>
+</header>
+
+<div class="w3-padding w3-white w3-display-container w3-center">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+  <h2>1ºCompartir</h2>
+  <p>Para compartir tu servidor Discord, primero nesitas hacerlo público. Con ese fin hay que configurarlo adecuadamente.</p>
+  Una de las razones fundamentales del éxito de Discord son las opciones de personalización que el servidor ofrece. </p>
+  Puedes alterar la configuración a tu aire y administrar el servidor sin problemas.</p>
+ 
+ <img src="imagenes\compartir.jpg" height="300px">
+</div>
+
+<footer class="w3-container w3-blue-grey">
+  <h5>Footer</h5>
+  <p class="w3-opacity">Footer information goes here</p>
+</footer>
+
+<div class="w3-padding w3-white w3-display-container w3-center">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+  <h2>2ºAgrega canales de voz y texto</h2>
+  <p>Si tu servidor es público, es recomendable que crees varios canales de voz y texto.</p>
+  Sobre todo es indispensable que los categorices adecuadamente, de manera que los usuarios no se confundan.</p>
+  Para agregar canales de texto o voz, haz clic en <strong>«Canales de texto (Text Channels)»</strong> o <strong>«Canales de voz (Voice Channels)»</strong>, y da a cada uno un nombre adecuado y claro, que evite las confusiones.</p>
+ 
+ <img src="imagenes\crearcanales.jpg" height="300px">
+</div>
+
+<footer class="w3-container w3-blue-grey">
+  <h5>Footer</h5>
+  <p class="w3-opacity">Footer information goes here</p>
+</footer>
+<div class="w3-padding w3-white w3-display-container w3-center">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+  <h2>3ºConfigura el nivel de verificación</h2>
+  <p>Será útil si deseas restringir el acceso a tu servidor Discord y admitir sólo a ciertos miembros, mejorando con ello la seguridad del servidor. </p>
+  Puedes elegir diversos niveles de verificación para que los participantes puedan enviar mensajes en los canales de texto o iniciar una conversación de audio. </p>
+  También se puede obviar esa verificación asignando funciones a un miembro en particular.</p>
+
+Con este fin haz lo siguiente:</p>
+<strong>1.</strong> Una vez que estés en Discord, haz clic en el nombre del servidor y ve a <strong>«Configuración del servidor (Server Settings)».</strong></p>
+ 
+ <img src="imagenes\canalesdevoz.jpg" height="300px"></p>
+ 
+<strong> 2.</strong> Ve a la sección de<strong> «Moderación (Moderation)»  </strong>, ubicada a la izquierda y ajusta el nivel de verificación según tus preferencias.</p>
+<img src="imagenes\verificacion.jpg" height="300px"></p>
+</div>
+
+
+<footer class="w3-container w3-blue-grey">
+  <h5>Footer</h5>
+  <p class="w3-opacity">Footer information goes here</p>
+</footer>
+
+<div class="w3-padding w3-white w3-display-container w3-center">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+  <h2>4ºGestión de roles o  funciones para los miembros</h2>
+  <p>En Discord tienes la alternativa de agregar y cambiar funciones específicas para determinados miembros del servidor. </p>
+  Dependiendo de estas funciones, los usuarios tendrán diferentes privilegios: un acceso directo y la capacidad para echar e incluso prohibir el acceso a los miembros normales.</p>
+  Si tienes un grupo de amigos fiables, puedes concederles permisos para que te ayuden con la administración del servidor Discord. Veamos cómo conceder estos privilegios:</p>
+
+<strong>1.</strong> Vete a <strong>«Configuración del servidor (Server settings)»</strong> haciendo clic en el nombre de tu servidor.</p>
+ 
+ <img src="imagenes\roles.jpg" height="300px"></p>
+ <strong>2.</strong> Ahora vete a la sección de<strong> «Funciones (Roles)»</strong> en el panel izquierdo. </p>
+ Ahí podrás agregar nuevas funciones a cada miembro, y ajustar los privilegios de cada uno.</p>
+
+ <img src="imagenes\colores.jpg" height="300px"></p>
+</div>
+
+<footer class="w3-container w3-blue-grey">
+  <h3><strong>Discord Web</strong></h3>
+  <p class="w3-opacity">Footer information goes here</p>
+</footer>
+
+<div class="w3-padding w3-white w3-display-container w3-center">
+  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
+  <h2>Estás listo para utilizar Discord en partidas online</h2>
+  <p>En lo que se refiere a las partidas multijugador, Discord parece ser hoy por hoy la mejor opción en lo que se refiere a la transmisión de datos de texto y audio, en comparación con otros servicios de VoIP, como TeamSpeak o Skype. Esto se debe, como ya hemos mencionado, a sus opciones de personalización, a la casi perfecta interfaz de usuario y a la sencillez de su administración.
+
+Sin duda, Discord es una gran opción de futuro del futuro en partidas online.
+ 
+ <img src="imagenes\logito.png" height="300px">
+</div>
+
+<footer class="w3-container w3-blue-grey">
+  <h5>Footer</h5>
+  <p class="w3-opacity">Footer information goes here</p>
+</footer>
+
+
+<hr>
+<h2 class="w3-center">Bots recomendados</h2>
+<div class="w3-border">
+<div class="w3-bar w3-theme">
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">Dyno</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Paris')">Koya</button>
+  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Tokyo')">Vortex</button>
+</div>
+
+<div id="London" class="w3-container city w3-animate-opacity">
+  <h2>Dyno</h2>
+  <img src="imagenes\miniweb.png"><br>
+  <strong>Panel</strong><br>
+  <p>Un panel web configurable y rico en funciones.Puede habilitar, deshabilitar y configurar todo fácilmente.<br>
+
+<img src="imagenes\musica.png"><br>
+<strong class="tamaño">Reproductor de música</strong><br>
+Dyno también es un bot de música Discord con listas de reproducción, roles de DJ, listas de reproducción y más.<br>
+
+<img src="imagenes\chat.png"><br>
+<strong>Moderación</strong><br>
+Moderación con registros de modificaciones, silenciamientos y prohibiciones cronometradas. Moderación automática / antispam, totalmente configurable.<br>
+
+<img src="imagenes\positivo.png"><br>
+<strong>Mucho más</strong><br>
+Autoroles, comandos personalizados, anuncios, rangos acumulables, estado AFK, recordatorios y mucho más.<br>
+</div>
+
+<div id="Paris" class="w3-container city w3-animate-opacity">
+  <h2>Koya</h2>
+  <p><strong>Un potente bot multifunción y configurable </strong>.</p> 
+  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+</div>
+
+<div id="Tokyo" class="w3-container city w3-animate-opacity">
+  <h2>Vortex</h2>
+  <p>Vortex es un bot diseñado para mantener su servidor seguro y su equipo de personal organizado. Su suite de moderación y registro realiza un seguimiento de sus miembros y hace que sus moderadores sean responsables. Sus capacidades de moderador automático también le permiten filtrar ciertos tipos de comportamiento sin necesidad de intervención humana, aligerando la carga en el equipo del personal. Finalmente, Vortex está diseñado para ser rápido y fácil de usar.</p>
+  <p><strong>Conjunto de comandos de moderación</strong><br>
+Ban, Softban, Kick, Mute, Strike, Pardon<br>
+<strong>Comandos fáciles de usar, sin banderas ni sintaxis confusa.</strong><br>
+<strong>Todos los comandos permiten múltiples objetivos y razones de configuración</strong><br>
+Prohibiciones y silencios cronometrados<br>
+Modo Anti-Raid<br>
+Registro extenso<br>
+Mensaje editar y eliminar registros<br>
+Registros de actividad del servidor<br>
+Registros de moderación<br>
+Registros de voz<br>
+Moderación automática configurable<br>
+Prevenir anuncios y referencias<br>
+Prevenir spam y copypastas<br>
+Prevenir nombre de elevación<br>
+Personalización (prefijo de bot, zona horaria de registro, rol de moderador).</p>
+</div>
+</div>
+<div class="w3-center" >
+<img  src="imagenes\Alvaro.png" height="400px">
+</div>
+<!-- Footer -->
+
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "100%";
+  x.style.fontSize = "40px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+  slideIndex = slideIndex + n;
+  showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Comandos<br>basicos</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="file:///C:/Users/alvarosancheze.car/Documents/PaginaWeb/index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Inicio</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Commandos de Moderación</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Comandos de Configuracion</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Comandos de iniciación </a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Comandos de herramientas</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Problemas?</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>📜 Comandos de moderación</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  <header class="w3-container w3-blue-grey w3-center">
+ <h2><strong>EL PREFIX UTILIZADO EN ESTOS EJEMPLOS ES >></strong><br></h2>
+</header>
+  
+ 
+</br>
+>>kick <@users or user IDs...> [reason]<br>
+Patea a todos los usuarios proporcionados (o ID de usuario). Si se incluye un motivo, ese motivo se utiliza en el registro de auditoría y el registro de moderación.</br>
+<br>
+>>ban <@users or user IDs...> [time] [reason]</br>
+Prohibe todos los usuarios proporcionados (o ID de usuario). Si se incluye un período de tiempo, los usuarios no serán excluidos después del tiempo proporcionado. Si se incluye un motivo, ese motivo se utiliza en el registro de auditoría y el registro de moderación.</br>
+<br>
+>>softban <@users or user IDs...> [reason]</br>
+Prohibe y luego inmediatamente elimina la prohibición de todos los usuarios provistos. Esto es útil para expulsar simultáneamente a un usuario y limpiar todos sus mensajes recientes. Si se incluye un motivo, ese motivo se utiliza en el registro de auditoría y el registro de moderación.</br>
+<br>
+>>unban <@users or user IDs...> [reason]</br>
+Deshabilitar usuarios.</br>
+<br>
+>>clean <parameters></br>
+Limpia todos los mensajes en el canal actual que coinciden con los parámetros dados. Consulte Mensajes de limpieza para obtener información más detallada sobre este comando.</br>
+<br>
+>>voicekick <@users or user IDs...></br>
+Crea un canal de voz temporal, mueve a los usuarios proporcionados a él y luego elimina el canal, expulsándolos efectivamente de la voz.</br>
+<br>
+>>voicemove [channel]</br>
+Pone Vortex en el canal de voz especificado (o su canal actual si no se proporcionan argumentos) y espera. Cuando arrastra Vortex a un nuevo canal, arrastrará a todos los usuarios del canal actual al nuevo canal.</br>
+<br>
+>>mute <@users or user IDs...> [time] [reason]
+Otorga el rol 'Silenciado' a todos los usuarios provistos. Si se incluye un período de tiempo, los usuarios no serán silenciados después del tiempo proporcionado. Si se incluye un motivo, ese motivo se utiliza en el registro de auditoría y el registro de moderación.</br>
+<br>
+>>unmute <@users or user IDs...> [reason]</br>
+Elimina la función 'Silenciado' de todos los usuarios proporcionados. Si se incluye un motivo, ese motivo se utiliza en el registro de auditoría y el registro de moderación.</br>
+<br>
+>>raidmode [ON | OFF] [reason]</br>
+Activa o desactiva el modo Anti-Raid. Si no se incluyen argumentos, mostrará si el Modo Anti-Raid está actualmente activo. Durante el modo Anti-Raid, la verificación del servidor se incrementará (no más alto que Tableflip) y todos los usuarios que intenten unirse al servidor serán informados de que el servidor está bloqueado y luego pateado. Ver Modo Anti-Raid para más información.</br>
+<br>
+>>strike [number] <@users or user IDs...> <reason></br>
+Da el número especificado de ataques (o 1 si no se especifica) a los usuarios proporcionados. Cada usuario recibirá un mensaje privado advirtiéndoles sobre las huelgas acumuladas y el motivo.</br>
+<br>
+>>pardon [number] <@users or user IDs...> <reason></br>
+Elimina el número especificado de ataques (o 1 si no se especifica) a los usuarios proporcionados. Cada usuario recibirá un mensaje privado que les informará sobre el perdón y la razón.</br>
+<br>
+>>check <user></br>
+Comprueba cuántos ataques tiene un usuario, así como su estado actual de silencio y / o prohibición, si está disponible.</br>
+<br>
+>>reason [case number] <reason></br>
+Edita un motivo en el Registro de moderación. Si no se proporciona ningún número de caso, Vortex buscará en el registro el caso más reciente que no haya proporcionado un motivo.</br>
+<br>
+
+
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b> 📜 Comandos de configuración</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+<br>
+>>setup</br>
+Realiza la configuración del servidor. Consulte Primeros pasos para obtener más información.</br>
+
+<br>
+>>messagelog <#channel or OFF></br>
+Establece el canal en el que se registrarán las ediciones y eliminaciones de mensajes.</br>
+<br>
+>>modlog <#channel or OFF></br>
+Establece el canal en el que se registrarán las acciones de moderación.</br>
+<br>
+>>serverlog <#channel or OFF></br>
+Establece el canal en el que se registrará la actividad del servidor (uniones, hojas, cambios de nombre).</br>
+<br>
+>>voicelog <#channel or OFF></br>
+Establece el canal al que se unirá la voz, se irá y se registrarán los cambios.</br>
+<br>
+>>avatarlog <#channel or OFF></br>
+Establece el canal en el que se registran los cambios de avatar de los miembros. Esta función solo está disponible con Vortex Pro .</br>
+<br>
+>>timezone <#zone></br>
+Establece la zona horaria para el registro del servidor, el registro de mensajes y las marcas de tiempo del registro de modificaciones. Vea Log Timezone para más información.</br>
+<br>
+>>modrole <#role></br>
+Establece la función de moderación para el servidor. Cualquier usuario con este rol puede ejecutar comandos de moderación , incluso si normalmente no tienen los permisos necesarios.</br>
+<br>
+>>prefix <#prefix or NONE><br>
+Establece un prefijo personalizado para el servidor. El prefijo predeterminado ( >>) seguirá funcionando y no se puede eliminar.</br>
+<br>
+>>settings</br>
+Muestra la configuración actual del servidor.</br>
+<br>
+>>ignore [role | channel]<br>
+Configura el moderador automático para ignorar a todos los usuarios con un rol específico, o todos los mensajes en un canal específico. Ejecute este comando sin argumentos para mostrar la lista de ignorados actual. Consulte Ignorar roles y canales para obtener más información.</br>
+<br>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>✉ Comandos de Iniciación</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+      >>about</br>
+Muestra información sobre el bot, incluido su número de versión, algunas características y algunas estadísticas.<br>
+<br>
+>>invite</br>
+Proporciona el enlace de invitación del bot. Si tiene problemas para invitar a Vortex, asegúrese de haber iniciado sesión correctamente en https://discordapp.com/login</br>
+<br>
+>>ping</br>
+Comprueba la latencia de Vortex.</br>
+<br>
+>>roleinfo <role></br>
+Muestra información sobre un rol.</br>
+<br>
+>>serverinfo</br>
+Muestra información sobre el servidor en el que se usa este comando.</br>
+<br>
+>>userinfo [user]</br>
+Muestra información sobre el usuario proporcionado o usted mismo si no incluye ningún argumento.</br>
+<br>
+ 
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>🛠 Comandos de herramientas</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+<br>
+>>announce <#channel> <#rolename> | <message></br>
+<br>
+>>audit <#ALL | FROM | ACTION> [user or action]</br>
+Encuentra entradas recientes del registro de auditoría (todas las entradas, entradas de un determinado usuario o entradas de un tipo de acción específico) y las muestra en un formato optimizado para dispositivos móviles.<br>
+</br>
+>>dehoist [symbol]<br>
+Modifica el apodo de cualquier usuario usando un símbolo (como !) para poner su nombre en la parte superior de la lista de miembros. De forma predeterminada, esto eliminará cualquier miembro con nombres que comiencen por !.</br>
+<br>
+>>inviteprune [max uses]</br>
+Elimina cualquier invitación con usos menores o iguales al número proporcionado. De forma predeterminada, esto eliminará las invitaciones con 0 o 1 usos<br>
+</br>
+>>lookup <#ID | invite><br>
+</br>
+  
+        
+    
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Problemas?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Tienes dudas de algun comando? no dudes y enviame un mensage por aqui y te respondere lo mas rapido posible!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nombre</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensage</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
